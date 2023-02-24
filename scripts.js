@@ -35,7 +35,7 @@ takeOffButton.addEventListener("click", function() {
 });
 
 landingButton.addEventListener("click", function(){
-    if (launched = true) {
+    if (launched === true) {
         let land = window.alert("The shuttle is landing. Landing gear engaged.");
         let flightStatus = document.getElementById("flightStatus");
         flightStatus.textContent = "The shuttle has landed.";
@@ -49,7 +49,7 @@ landingButton.addEventListener("click", function(){
 });
 
 abortButton.addEventListener("click", function(){
-    if (launched = true) {
+    if (launched === true) {
         let abortMission = window.confirm("Confirm that you want to abort the mission.");
         if (abortMission) {
             let flightStatus = document.getElementById("flightStatus");
@@ -70,7 +70,7 @@ abortButton.addEventListener("click", function(){
 //     })
 // }
 leftButton.addEventListener("click", function(){
-    if (launched = true) {
+    if (launched === true) {
         if (parseInt(rocket.style.left) != 0) {
             let movement = parseInt(rocket.style.left) - 10 + 'px';
             rocket.style.left = movement
@@ -79,7 +79,7 @@ leftButton.addEventListener("click", function(){
 });
 
 rightButton.addEventListener("click", function(){
-    if (launched = true) {
+    if (launched === true) {
         if (parseInt(rocket.style.left) != 400) {
             let movement = parseInt(rocket.style.left) + 10 + 'px';
             rocket.style.left = movement
@@ -88,7 +88,7 @@ rightButton.addEventListener("click", function(){
 });
 
 upButton.addEventListener("click", function(){
-    if (launched = true) {
+    if (launched === true) {
         if (shuttleHeight.innerHTML != "250000") {
             let shuttleHeight = document.getElementById("spaceShuttleHeight");
             let currentPosition = Number(shuttleHeight.textContent);
@@ -101,7 +101,7 @@ upButton.addEventListener("click", function(){
 });
 
 downButton.addEventListener("click", function(){
-    if (launched = true) {
+    if (launched === true) {
         if (shuttleHeight.innerHTML != "0") {
             let shuttleHeight = document.getElementById("spaceShuttleHeight");
             let currentPosition = Number(shuttleHeight.textContent);
