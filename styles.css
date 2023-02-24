@@ -6,6 +6,10 @@
     position: relative;
 }
 
+#rocket {
+    justify-items: baseline;
+}
+
 #flightStatus {
     color: green;
 }
